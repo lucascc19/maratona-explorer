@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#container {
+    margin-top: 100px;
+    width: 80%;
+    max-width: 400px;
+    /*margin-right: auto && margin-left: auto == margin-inline: auto;*/
+    margin-inline: auto;
+}
+
+img {
+    width: 25%;
+    max-width: 200px;
+}
+
+h1 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+p {
+    margin-bottom: 40px;
+    opacity: 0.7;
+}
+
+input, button {
+    display: block;
+    width: 100%;
+
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 4px;
+    outline: 0;
+    border: none;
+}
+
+input {
+    background-color: rgba(162, 161, 161, 0.117);
+    opacity: 0.9;
+    transition: .5s;
+    color: white;
+}
+
+input:focus {
+    border: 1px solid #a634ff;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 0.6;
+    font-size: 18px;
+}
+
+button {
+    margin-top: 20px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    transition: filter .2s;
+}
+
+/* pseudo-class */
+button:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+#resposta {
+    margin-top: 30px;
+    transition: opacity 1s;
+}
+
+#resposta div {
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
